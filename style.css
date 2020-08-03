@@ -1,0 +1,40 @@
+*{
+color:white;
+}
+html, body{
+    min-height: 100%;
+    background-color:#4b5d67;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+svg{
+    background-color: #222831;
+}
+
+#canvas{
+    min-width: 1000px;
+    min-height: 600px
+}
+
+#tooltip{
+position: absolute;
+top:130px;
+right:500px;
+font-weight:bold;
+
+}
+
+#legend{
+position: absolute;
+right:200px;
+bottom:15px;
+height:130px;
+width:150px;
+
+}

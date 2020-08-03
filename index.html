@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choropleth-Map</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+</head>
+<body>
+    <h2 id='title'>United States Adult Education</h2>
+    <div id='description'>Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014). Source: <a href='https://www.ers.usda.gov/data-products/county-level-data-sets/download-data.aspx'>USDA Economic Research Service</a></div>
+    <svg id='canvas'>
+            
+    </svg>
+    <div id='tooltip'>
+
+    </div>
+    <svg id='legend'>
+        <g>
+            <circle cx="10" cy="10" r="5" fill="#bc658d"></circle>
+            <text x="15" y="10" fill="white">Less than 15%</text>
+        </g>
+        <g>
+            <circle cx="10" cy="40" r="5" fill="#82c4c3"></circle>
+            <text x="15" y="40" fill="white">15% than 30%</text>
+        </g>
+        <g>
+            <circle cx="10" cy="80" r="5" fill="#f9d89c"></circle>
+            <text x="15" y="80" fill="white">30% to 45%</text>
+        </g>
+        <g>
+            <circle cx="10" cy="120" r="5" fill="#900d0d"></circle>
+            <text x="15" y="120" fill="white">More than 45%</text>
+        </g>
+    </svg>
+
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
