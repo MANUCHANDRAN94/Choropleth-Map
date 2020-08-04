@@ -25,9 +25,11 @@ let drawMap = () => {
       let percentage = county["bachelorsOrHigher"];
       if (percentage <= 15) {
         return "#bc658d";
-      } else if (percentage <= 30) {
+      } else if (percentage <= 25) {
         return "#82c4c3";
-      } else if (percentage <= 45) {
+      }else if (percentage <= 35) {
+        return "#62760c";
+      }  else if (percentage <= 45) {
         return "#f9d89c";
       } else {
         return "#900d0d";
